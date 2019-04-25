@@ -1,0 +1,88 @@
+questão 1
+
+vi primeiro.sh
+i
+#!/usr/bash
+echo Escreva seu nome
+read nome
+echo Bom dia $nome
+chmod +x primeiro.sh
+sh primeiro.sh
+
+questão 2
+	
+vi segundo.sh
+i
+#!/usr/bash
+echo Informe o primeiro numero
+read n1
+echo Informe o segundo numero 
+read n2
+result=$[ $n1*$n2 ]
+echo O resultado é: $result
+chmod +x segundo.sh
+sh segundo.sh
+
+questão 3
+
+vi terceiro.sh
+i
+#!/usr/bash
+echo Digite o primeiro número
+read n
+	
+if [ $n = 0 ]; then
+	echo o numero  zero
+	
+elif [ $n -lt 0 ]; then
+	echo o numero é negativo
+	
+else
+	echo o numero é positivo
+
+fi
+
+chmod +x terceiro.sh
+sh terceiro.sh
+
+questão 4
+
+	
+vi quarto.sh
+i
+#!/usr/bash
+echo digite o primeiro numero 
+read n
+c=0
+echo numero $n
+while [ $c -le 10 ]; do
+	val=$(($n*$c))
+	echo "$n x $c = $val"
+	c=$(($c+1))
+done
+
+chmod +x quarto.sh
+sh quarto.sh
+
+questão 5
+
+	
+vi quinto.sh
+i
+#!/usr/bash
+echo Opções
+
+echo 1- Calendário
+echo 2- Lista de arquivos do diretório
+
+echo selecione uma das opções
+read op
+if [ $op = 1 ]; then
+	cal
+elif [ $op = 2 ]; then
+		ls
+else
+	echo opcao inválida
+fi
+chmod +x quinto.sh
+ish quinto.sh
